@@ -1,0 +1,60 @@
+Part 1: Discussion Questions
+
+Runtime
+
+When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+>>> O(n), n being the number of crackers in the box
+
+Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+O(log n)
+O(n2)
+O(n log n)
+O(n)
+O(2n) (i.e. 2 to the n-th power)
+O(1)
+>>> O(1), O(log n), O(n),O(n log n), O(n2), O(2n)
+
+
+
+
+Stacks and Queues
+
+In the following cases, would a stack or queue be a more appropriate data structure?
+The process of loading and unloading pallets onto a flatbed truck
+>>> stack
+
+Putting bottle caps on bottles of beer as they roll down an assembly line
+>>> queue
+
+Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+>>> stack
+
+Describe two more situations where a queue would be an appropriate data structure.
+>>> task lists, help queue, buffers
+
+Describe two more situations where a stack would be an appropriate data structure.
+>>> undo, browser back button, functions within functions
+
+Linked Lists
+
+Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+>>> "Apple", "Berry", "Cherry" is the data inside the nodes, boxes are the nodes, arrows are the pointers that point to the next node - the onyl thing we keep track of in lnked lists is the data and the next attributes."Apple" is the head, "Cherry" is the tail since its' next is None
+
+What’s the difference between doubly- and singly-linked lists?
+>>> Doubly keep track of the next node and previous node. Singly keep track of the next node.
+
+Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+>>> This way we wont need to find the tail in the first place, we can go directly there. It's a convenience.
+
+Trees
+
+
+Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+>>>food>italian>indian>mexican>lasagna>pizza>tikka masala>sagg>burrito>tacos>enchilada>thin crust>chicago style
+
+
+Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+>>> food>mexican>enchilada>tacos>burrito
+
+How is a binary search tree different from other trees?
+Binary search tree is a tree with two children, left and right child node. Representation of data. Binary Search TReet is a special BT that follows these conditions: left child node is smaller than its parent node, right child node is greater than its parent node.
