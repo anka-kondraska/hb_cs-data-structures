@@ -26,9 +26,7 @@ class Node(object):
             2
         """
 
-        # FIXME
-
-        pass
+        return len(children)
 
 
 class Tree(object):
